@@ -21,7 +21,7 @@ const questions = [
     type: "checkbox",
     name: "license",
     message: "Please select a license available to this project",
-    choices: ["MIT", "GPL 3.0", "BSD 3", "None"]
+    choices: ["MIT", "GPL 3.0", "BSD 3", "none"]
 },
 {
     type: "input",
@@ -56,11 +56,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
+    inquirer.prompt(questions).then((responses) => {
         console.log("Generating a README.md file...");
         writeToFile("./utils/README.md", generateMarkdown({...responses})); 
     }); 
