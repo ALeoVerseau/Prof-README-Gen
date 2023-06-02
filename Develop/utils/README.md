@@ -1,20 +1,12 @@
-# Professional README Generator
-  ## Table of Contents
-  *[Descriptions]{#descriptioins}
-  *[License]{#license}
-  *[Installation]{#installation}
-  *[Usage]{#usage}
-  *[Contributions]{#contributing}
-  *[Testing]{#testing}
-  *[Questions]{#questions}
+# Professional README Markdown Generator
   ## Description
-  generates a professional README markdown generator
+  Generate a professional README markdown file
   ## Requirements
   Inquirer npm package
   ## Usage
-  to generate a README markdown 
+  to showcase our coding abilities for project 9
   ## Contributions
-  Youtube and Class notes
+  Youtube & Class Notes
   ## Testing
   N.A
   ## Questions
